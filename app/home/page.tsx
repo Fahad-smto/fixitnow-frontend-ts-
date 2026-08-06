@@ -3,12 +3,14 @@
 import PopularServices from '@/components/ui/popularServices';
 import TechnicianTrust from '@/components/ui/TechnicianTrust';
 import Footer from '@/components/ui/footer';
+import HowItWorks from '@/components/ui/howItWorks';
 
  const home = () => {
    return (
      <div>
    <ServicePromoBanner></ServicePromoBanner>
    <PopularServices></PopularServices>
+   <HowItWorks></HowItWorks>
    <TechnicianTrust></TechnicianTrust>
    <Footer></Footer>
      </div>
