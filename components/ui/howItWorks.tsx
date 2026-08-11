@@ -2,18 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-/**
- * FixItNow — How it works (animated).
- *
- * The steps are numbered because order is real information here (you
- * can't get matched before you radio it in). The animation mirrors a
- * work order's lifecycle: a dispatch line "draws" down the page as you
- * scroll, and each step gets physically stamped once it's reached —
- * same stamp language as the hero ticket and the technician badges.
- *
- * Respects prefers-reduced-motion: animations degrade to an instant
- * "already stamped" state, no motion required to read the content.
- */
+ 
 
 type Step = {
   code: string;
