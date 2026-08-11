@@ -46,7 +46,7 @@ export default function Footer() {
             </span>
             SYSTEM STATUS — ALL DISPATCH ONLINE
           </div>
-          <span>247 technicians active right now</span>
+          <span> technicians active right now</span>
         </div>
       </div>
 
