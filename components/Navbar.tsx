@@ -41,7 +41,7 @@ export default function Navbar() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#3FA796] opacity-60" />
               <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[#3FA796]" />
             </span>
-            DISPATCH OPEN
+            
           </div>
 
           <span className="hidden h-4 w-px bg-white/10 sm:block" />
