@@ -1,13 +1,4 @@
-/**
- * FixItNow — Technician Trust section.
- *
- * Signature element: each testimonial is framed as a technician's
- * laminated ID badge (punch-hole, verified stamp, tech ID number)
- * rather than a generic avatar-quote card — it's what actually builds
- * trust for a home-repair platform: knowing who's showing up.
- * The customer quote sits underneath as a "field note," clipped to
- * the badge like a review attached to a work order.
- */
+ 
 
 type Technician = {
   techId: string;
