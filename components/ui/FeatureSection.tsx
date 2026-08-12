@@ -1,26 +1,32 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { CheckCircle2 } from 'lucide-react';
 
 interface FeatureSectionProps {
-  title: string;
-  description: string;
-  points: string[];
-  imageSrc: string;
-  imageAlt: string;
+  title?: string;
+  description?: string;
+  points?: string[];
+  imageSrc?: string;
+  imageAlt?: string;
   ctaLabel?: string;
   ctaHref?: string;
   reverse?: boolean; // true = image on the left, text on the right
 }
 
 export default function FeatureSection({
-  title,
-  description,
-  points,
-  imageSrc,
-  imageAlt,
-  ctaLabel,
-  ctaHref,
+  title = 'Built for how home services actually work',
+  description = 'Set your own prices, manage your own schedule, and get paid securely — no chasing customers for payment.',
+  points = [
+    'Create unlimited services under your profile',
+    'Accept or decline bookings on your own terms',
+    'Get paid directly through Stripe after every job',
+  ],
+  imageSrc = 'https://picsum.photos/id/1076/1600/700',
+  imageAlt = 'Technician at work',
+  ctaLabel = 'Get started',
+  ctaHref = '/auth/register',
   reverse = false,
 }: FeatureSectionProps) {
   return (
@@ -56,7 +62,13 @@ export default function FeatureSection({
 
         {/* Image side */}
         <div className="relative h-64 w-full overflow-hidden rounded-lg sm:h-80">
-          <Image src={imageSrc} alt={imageAlt} fill className="object-cover" sizes="(min-width: 768px) 50vw, 100vw" />
+          <Image
+            src={imageSrc}
+            alt={imageAlt}
+            fill
+            className="object-cover"
+            sizes="(min-width: 768px) 50vw, 100vw"
+          />
         </div>
       </div>
     </section>
