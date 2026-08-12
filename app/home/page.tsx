@@ -6,6 +6,7 @@ import Footer from '@/components/ui/footer';
 import HowItWorks from '@/components/ui/howItWorks';
 import HeroSlider from '@/components/ui/heroSlider';
 import FeatureSection from '@/components/ui/FeatureSection';
+import ContactSection from '@/components/ui/ContactSection';
 
  const home = () => {
    return (
@@ -16,6 +17,7 @@ import FeatureSection from '@/components/ui/FeatureSection';
    <FeatureSection></FeatureSection>
    <HowItWorks></HowItWorks>
    <TechnicianTrust></TechnicianTrust>
+   <ContactSection></ContactSection>
    <Footer></Footer>
      </div>
    );
