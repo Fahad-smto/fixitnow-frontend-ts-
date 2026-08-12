@@ -30,45 +30,47 @@ export default function FeatureSection({
   reverse = false,
 }: FeatureSectionProps) {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-16">
-      <div
-        className={`grid grid-cols-1 items-center gap-10 md:grid-cols-2 ${
-          reverse ? 'md:[&>*:first-child]:order-2' : ''
-        }`}
-      >
-        {/* Text side */}
-        <div>
-          <h2 className="text-3xl font-bold tracking-tight">{title}</h2>
-          <p className="mt-4 text-[var(--muted-foreground)]">{description}</p>
+    <section className="bg-[#14181a] py-16 text-white">
+      <div className="mx-auto max-w-6xl px-6">
+        <div
+          className={`grid grid-cols-1 items-center gap-10 md:grid-cols-2 ${
+            reverse ? 'md:[&>*:first-child]:order-2' : ''
+          }`}
+        >
+          {/* Text side */}
+          <div>
+            <h2 className="text-3xl font-bold tracking-tight text-white">{title}</h2>
+            <p className="mt-4 text-white/70">{description}</p>
 
-          <ul className="mt-6 space-y-3">
-            {points.map((point) => (
-              <li key={point} className="flex items-start gap-3">
-                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[var(--primary)]" />
-                <span>{point}</span>
-              </li>
-            ))}
-          </ul>
+            <ul className="mt-6 space-y-3">
+              {points.map((point) => (
+                <li key={point} className="flex items-start gap-3">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-white" />
+                  <span className="text-white/90">{point}</span>
+                </li>
+              ))}
+            </ul>
 
-          {ctaLabel && ctaHref && (
-            <Link
-              href={ctaHref}
-              className="mt-8 inline-block rounded-md bg-[var(--primary)] px-6 py-3 font-medium text-[var(--primary-foreground)] hover:opacity-90"
-            >
-              {ctaLabel}
-            </Link>
-          )}
-        </div>
+            {ctaLabel && ctaHref && (
+              <Link
+                href={ctaHref}
+                className="mt-8 inline-block rounded-md bg-white px-6 py-3 font-medium text-black hover:bg-white/90"
+              >
+                {ctaLabel}
+              </Link>
+            )}
+          </div>
 
-        {/* Image side */}
-        <div className="relative h-64 w-full overflow-hidden rounded-lg sm:h-80">
-          <Image
-            src={imageSrc}
-            alt={imageAlt}
-            fill
-            className="object-cover"
-            sizes="(min-width: 768px) 50vw, 100vw"
-          />
+          {/* Image side */}
+          <div className="relative h-64 w-full overflow-hidden rounded-lg sm:h-80">
+            <Image
+              src={imageSrc}
+              alt={imageAlt}
+              fill
+              className="object-cover"
+              sizes="(min-width: 768px) 50vw, 100vw"
+            />
+          </div>
         </div>
       </div>
     </section>
