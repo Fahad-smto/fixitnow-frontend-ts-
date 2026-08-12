@@ -10,8 +10,7 @@ import FeatureSection from '@/components/ui/FeatureSection';
  const home = () => {
    return (
      <div>
-   <HeroSlider></HeroSlider>
-   
+   {/* <HeroSlider></HeroSlider> */}
    <ServicePromoBanner></ServicePromoBanner>
    <PopularServices></PopularServices>
    <FeatureSection></FeatureSection>
