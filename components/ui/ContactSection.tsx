@@ -4,8 +4,7 @@ import { useState } from 'react';
 import { Mail, Send } from 'lucide-react';
 import toast from 'react-hot-toast';
 
-// The email address that "Send" opens in the customer's own mail app.
-// Change this to your real support/contact email.
+
 const CONTACT_EMAIL = 'support@fixitnow.com';
 
 export default function ContactSection() {
