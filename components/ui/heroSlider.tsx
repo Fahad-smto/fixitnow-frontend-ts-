@@ -9,10 +9,7 @@ interface Slide {
   alt: string;
   caption: string;
 }
-
-// Placeholder photos representing different home services.
-// Swap these `src` values for your own photos whenever you have real ones —
-// nothing else in this component needs to change.
+ 
 const SLIDES: Slide[] = [
   { src: 'https://picsum.photos/id/1076/1600/700', alt: 'Plumber fixing a pipe', caption: 'Trusted plumbers, ready when you need them' },
   { src: 'https://picsum.photos/id/1082/1600/700', alt: 'Electrician at work', caption: 'Licensed electricians for any job, big or small' },
