@@ -4,16 +4,6 @@ import { NextResponse } from 'next/server';
 // Routes anyone can visit without logging in
 const PUBLIC_ROUTES = ['/','/home', '/services', '/technicians', '/payment/success', '/payment/cancel'];
 
-// The login/register pages themselves
-const AUTH_ROUTES = ['/auth/login', '/auth/register'];
-
-// This runs on the server, before any page loads. It reads the cookies that
-// were set in lib/auth-store.ts at login time, and decides whether the
-// visitor is allowed to see the page they're asking for.
-//
-// Note: our backend issues a single JWT (no refresh token), so this stays
-// simple — just "is there a token" and "does the role match this section".
-export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   const token = request.cookies.get('fixitnow_token')?.value;
