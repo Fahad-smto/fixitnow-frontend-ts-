@@ -1,5 +1,3 @@
-import type { NextRequest } from 'next/server';
-import { NextResponse } from 'next/server';
 
 // Routes anyone can visit without logging in
 const PUBLIC_ROUTES = ['/','/home', '/services', '/technicians', '/payment/success', '/payment/cancel'];
