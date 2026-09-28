@@ -13,7 +13,13 @@
 
 import { JSX } from "react/jsx-runtime";
 
-
+type Service = {
+  code: string;
+  name: string;
+  blurb: string;
+  avgEta: string;
+  icon: JSX.Element;
+};
 
 const iconProps = {
   className: "h-6 w-6",
